@@ -27,35 +27,35 @@ sleep 2s
 #changes: in order to prevent transactions taking more than 30ms and being refused, eosio::producer_plugin --max-transaction-time=300 parameter has been added to eosio node
 ./05*
 ./06*
-./07*
-./09*
+# ./07*
+# ./09*
 
-cd ../node1
-./start.sh
+# cd ../node1
+# ./start.sh
 
-cd ../node2
-./start.sh
+# cd ../node2
+# ./start.sh
 
-cd ../node3
-./start.sh
+# cd ../node3
+# ./start.sh
 
-cd ../node4
-./start.sh
+# cd ../node4
+# ./start.sh
 
-cd ../node5
-./start.sh
+# cd ../node5
+# ./start.sh
 
-cd ../node6
-./start.sh
+# cd ../node6
+# ./start.sh
 
-cd ../node7
-./start.sh
+# cd ../node7
+# ./start.sh
 
-cd ../eos_boot_steps
+# cd ../eos_boot_steps
 
-./08*
+# ./08*
 
-cleos get info
+# cleos get info
 # /home/eos/ibctprivate/node/start.sh
 # sleep 2s
 
