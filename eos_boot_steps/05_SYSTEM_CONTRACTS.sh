@@ -4,3 +4,4 @@ BE_CONTRACTS_FOLDER="/home/eos/eos/contracts"
 
 ./cleos.sh set contract eosio $BE_CONTRACTS_FOLDER/eosio.system -p eosio
 ./cleos.sh push action eosio setpriv '["eosio.msig",1]' -p eosio
+sleep 2s
