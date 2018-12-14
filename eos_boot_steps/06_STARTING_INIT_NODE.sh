@@ -7,7 +7,9 @@ INIT_PRIV_KEY="$( jq -r '.INIT_PRIV_KEY' "00_CONFIG.conf" )"
 ./cleos.sh transfer eosio $INIT_ACCOUNT "24989900.0000 CR" "init" -p eosio
 
 ./cleos.sh system regproducer $INIT_ACCOUNT $INIT_PUB_KEY https://ibct.io/ -p $INIT_ACCOUNT
-./cleos.sh system delegatebw $INIT_ACCOUNT $INIT_ACCOUNT "1000000.0000 CR" "1000000.0000 CR" --transfer
+
+./cleos.sh system delegatebw $INIT_ACCOUNT $INIT_ACCOUNT "1000000.0000 CR" "1000000.0000 CR"
+
 ./cleos.sh system voteproducer $INIT_ACCOUNT $INIT_ACCOUNT "1000.0000 CR"
 ./cleos.sh system listproducers
 
