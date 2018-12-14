@@ -53,7 +53,7 @@ cd ../node7
 
 cd ../eos_boot_steps
 
-./07*
+./08*
 
 cleos get info
 # /home/eos/ibctprivate/node/start.sh
