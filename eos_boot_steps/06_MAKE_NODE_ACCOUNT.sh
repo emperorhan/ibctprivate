@@ -31,6 +31,7 @@ PUB_KEY_80="$( jq -r '.PUB_KEY_80' "00_CONFIG.conf" )"
 PRIV_KEY_80="$( jq -r '.PRIV_KEY_80' "00_CONFIG.conf" )"
 
 ./cleos.sh system newaccount --stake-net "50000000.0000 CR" --stake-cpu "50000000.0000 CR" --buy-ram "100.0000 CR" eosio $INIT_ACCOUNT $INIT_PUB_KEY $INIT_PUB_KEY -p eosio
+# cleos system newaccount eosio $INIT_ACCOUNT $INIT_PUB_KEY $INIT_PUB_KEY --stake-net "50000000.0000 CR" --stake-cpu "50000000.0000 CR" --buy-ram "1000.0000 EOS"
 
 ./cleos.sh system newaccount --stake-net "50000000.0000 CR" --stake-cpu "50000000.0000 CR" --buy-ram "100.0000 CR" eosio $ACCOUNT_77 $PUB_KEY_77 $PUB_KEY_77 -p eosio
 
