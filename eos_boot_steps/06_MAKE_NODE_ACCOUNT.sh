@@ -40,8 +40,6 @@ PRIV_KEY_80="$( jq -r '.PRIV_KEY_80' "00_CONFIG.conf" )"
 
 ./cleos.sh system newaccount --stake-net "50000000.0000 CR" --stake-cpu "50000000.0000 CR" --buy-ram "100.0000 CR" eosio $ACCOUNT_80 $PUB_KEY_80 $PUB_KEY_80 -p eosio
 
-sleep 2s
-
 ./cleos.sh transfer eosio $ACCOUNT_77 "24989900.0000 CR" "init" -p eosio
 ./cleos.sh transfer eosio $ACCOUNT_78 "24989900.0000 CR" "init" -p eosio
 ./cleos.sh transfer eosio $ACCOUNT_79 "24989900.0000 CR" "init" -p eosio
@@ -49,5 +47,3 @@ sleep 2s
 ./cleos.sh transfer eosio $ACCOUNT_87 "24989900.0000 CR" "init" -p eosio
 ./cleos.sh transfer eosio $ACCOUNT_88 "24989900.0000 CR" "init" -p eosio
 ./cleos.sh transfer eosio $ACCOUNT_80 "24989900.0000 CR" "init" -p eosio
-
-sleep 2s
