@@ -1,8 +1,5 @@
 #!/bin/bash    
 killall nodeos
-killall keosd
-
-./start_wallet.sh
 
 sleep 1s
 
