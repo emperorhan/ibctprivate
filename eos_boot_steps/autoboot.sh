@@ -6,8 +6,6 @@ killall keosd
 
 sleep 1s
 
-cleos wallet create
-
 #unlock wallet
 ./00_WALLET_IMPORT.sh &> /dev/null
 
